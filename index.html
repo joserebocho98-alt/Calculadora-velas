@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Custos – Velas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Calculadora de Custos – Velas</h1>
+
+    <section class="card">
+      <table id="materiais">
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Preço (£)</th>
+            <th>Usar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Soy wax (1g)</td><td data-price="0.01">0.01</td><td><input type="checkbox" checked></td></tr>
+          <tr><td>Candle dye (1 drop)</td><td data-price="0.04">0.04</td><td><input type="checkbox" checked></td></tr>
+          <tr><td>Warning label</td><td data-price="0.02">0.02</td><td><input type="checkbox" checked></td></tr>
+          <tr><td>Oils (1ml)</td><td data-price="0.10">0.10</td><td><input type="checkbox" checked></td></tr>
+          <tr><td>Store labels</td><td data-price="0.01">0.01</td><td><input type="checkbox" checked></td></tr>
+
+          <tr><td>Mixed dried petals (pinch)</td><td data-price="0.10">0.10</td><td><input type="checkbox"></td></tr>
+          <tr><td>Dried wheat (3p)</td><td data-price="0.05">0.05</td><td><input type="checkbox"></td></tr>
+          <tr><td>Dried baby breath (3p)</td><td data-price="0.04">0.04</td><td><input type="checkbox"></td></tr>
+          <tr><td>Dried lavender (3p)</td><td data-price="0.04">0.04</td><td><input type="checkbox"></td></tr>
+
+          <tr><td>Wood wick</td><td data-price="0.18">0.18</td><td><input type="checkbox" checked></td></tr>
+          <tr><td>Tin container (4oz)</td><td data-price="0.71">0.71</td><td><input type="checkbox" checked></td></tr>
+
+          <tr><td>Pouch</td><td data-price="0.14">0.14</td><td><input type="checkbox"></td></tr>
+          <tr><td>Seal bag</td><td data-price="0.08">0.08</td><td><input type="checkbox"></td></tr>
+          <tr><td>Bag pick up + store label</td><td data-price="0.33">0.33</td><td><input type="checkbox"></td></tr>
+          <tr><td>Mail envelope</td><td data-price="0.11">0.11</td><td><input type="checkbox"></td></tr>
+
+          <tr><td>Dried flower (1p)</td><td data-price="0.14">0.14</td><td><input type="checkbox"></td></tr>
+          <tr><td>Dried leaves (1p)</td><td data-price="0.14">0.14</td><td><input type="checkbox"></td></tr>
+
+          <tr><td>Red glitter (0.5g)</td><td data-price="0.08">0.08</td><td><input type="checkbox"></td></tr>
+          <tr><td>Xmas shapes (1p)</td><td data-price="0.02">0.02</td><td><input type="checkbox"></td></tr>
+          <tr><td>Heart shapes (1p)</td><td data-price="0.01">0.01</td><td><input type="checkbox"></td></tr>
+        </tbody>
+      </table>
+
+      <div class="total">
+        Total: £<span id="total">0.00</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Feito para calcular custos rapidamente. Edita preços no HTML (data-price) ou evolui para JSON.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
